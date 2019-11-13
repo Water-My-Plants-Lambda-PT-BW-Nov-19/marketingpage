@@ -13,3 +13,32 @@ Pitch:
 Images:
 
 - commercial-garden : Abigail Lynn (Unsplash)
+- watering-plant : Markus Spiske (Unsplash)
+- three-plants : Carolyn V (Unsplash)
+- brass-kettle : Kaufmann Mercantile (Unsplash)
+
+# Team:
+
+Web UI Developers
+
+- Alexander Harrison
+
+- Tatyana Dzhura
+
+- Adella Kennedy
+
+Web React 1
+
+- Chase Collins
+
+- Brendan Finn
+
+Web React II
+
+- Jacab Calvino
+
+- Andrew Bastian
+
+Project Lead
+
+- Wanda Evans (WEBPT8)
