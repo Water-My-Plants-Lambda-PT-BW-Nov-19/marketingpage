@@ -2,12 +2,21 @@
   box-sizing: border-box;
 }
 
-html {
-  font-size: 62.5%;
+html,
+body {
+  margin: 0 auto;
+  font-size: 1.2rem;
 }
 
-container {
+body {
   max-width: 1000px;
-  width: 100%;
-  margin: 0 auto;
+}
+
+h1 {
+  font-size: 2rem;
+  color: @lightblue;
+}
+
+a {
+  .nav-link-mixin(none, @sea-green);
 }
