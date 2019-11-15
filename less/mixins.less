@@ -3,6 +3,24 @@
   color: @color;
 }
 
+.nav-bar-mixin() {
+  background-color: #078b75;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 5%;
+  letter-spacing: 1.2px;
+
+  a {
+    color: white;
+    // transition: 0.15s ease-in-out;
+  }
+  a:hover {
+    background-color: #078b75;
+    color: black;
+  }
+}
+
 .button-mixin() {
   display: inline-block;
   padding: 14px 30px;

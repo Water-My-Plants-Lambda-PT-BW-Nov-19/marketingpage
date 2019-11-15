@@ -132,24 +132,25 @@ table {
 html,
 body {
   margin: 0 auto;
-  font-size: 1.2rem;
+  font-family: "Overpass Mono";
 }
 body {
   max-width: 1000px;
 }
 h1 {
   font-size: 2rem;
-  color: #3db1ff;
+  color: white;
 }
 h2 {
   font-size: 1.8rem;
 }
 h3 {
-  font-size: 1.6rem;
+  font-size: 2.2rem;
+  margin: 1% 0;
 }
 a {
   text-decoration: none;
-  color: #078b75;
+  color: 0;
 }
 button {
   display: inline-block;
@@ -167,59 +168,87 @@ img {
   border-radius: 20px;
 }
 .top {
-  height: 100px;
+  background-color: #078b75;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  max-width: 0 auto;
-  margin: 1% 0;
+  justify-content: space-between;
+  padding: 15px 5%;
+  letter-spacing: 1.2px;
+}
+.top a {
+  color: white;
+}
+.top a:hover {
+  background-color: #078b75;
+  color: black;
 }
 footer {
   background-color: #078b75;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 5%;
+  letter-spacing: 1.2px;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
+footer a {
+  color: white;
+}
+footer a:hover {
+  background-color: #078b75;
+  color: black;
+}
+footer a {
+  margin: 0 10%;
+}
 .footer {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 5%;
   margin-bottom: 2%;
-}
-.footer a {
-  color: white;
 }
 .footer .copyright {
   color: white;
   font-size: 0.5rem;
 }
 .section1 {
-  margin: 1% 0;
+  margin: 1% 10%;
   width: 100%;
   text-align: center;
 }
+.section1 h2 {
+  margin: 2% 0;
+}
 .section1 .intro {
+  margin: 2% 0;
   display: flex;
   justify-content: column;
-  width: 100%;
+  text-align: center;
 }
-.section2,
+.section1 button {
+  margin: 2% 0;
+}
+.section2 {
+  display: flex;
+  margin: 10% 0;
+}
+.section2 .meet {
+  margin: 5%;
+}
 .section3 {
   display: flex;
   margin: 10% 0;
 }
-.section2 .meet,
-.section3 .meet {
-  margin: 5%;
-}
-.section3 {
-  display: flex;
-}
 .section3 .work {
   margin: 5%;
 }
-.image {
-  text-align: center;
+.section3 p {
   margin: 2% 0;
+}
+.section4 {
+  display: flex;
+  margin: 10% 0;
+}
+.section4 .mission {
+  margin: 5%;
 }
