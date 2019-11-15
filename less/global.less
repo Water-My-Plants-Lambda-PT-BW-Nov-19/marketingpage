@@ -1,21 +1,24 @@
 * {
   box-sizing: border-box;
+  margin: 0 auto;
 }
 
 html,
 body {
-  margin: 0 auto;
-  //   font-size: 1.2rem;
   font-family: "Overpass Mono";
 }
 
-body {
+.container {
   max-width: 1000px;
+  margin: 0 auto;
 }
 
 h1 {
   font-size: 2rem;
   color: white;
+  @media (max-width: 800px) {
+    font-size: 1.6rem;
+  }
 }
 
 h2 {
@@ -24,11 +27,14 @@ h2 {
 
 h3 {
   font-size: 2.2rem;
-  margin: 1% 0;
+}
+
+.container {
+  width: 100%;
 }
 
 a {
-  .nav-link-mixin(none, 0);
+  .nav-link-mixin();
 }
 
 button {
@@ -37,4 +43,9 @@ button {
 
 img {
   .image-mixin();
+}
+
+a.active {
+  color: black;
+  font-weight: 500;
 }

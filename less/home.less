@@ -1,6 +1,18 @@
+.img-home {
+  height: 400px;
+  width: 50%;
+  @media (max-width: 500px) {
+    width: 90%;
+    height: 200px;
+  }
+}
+
 .section1 {
-  margin: 1% 10%;
-  width: 100%;
+  //   background-image: ;
+  //   margin: 0 10%;
+  width: auto;
+  display: flex;
+  flex-direction: column;
   text-align: center;
 
   h2 {
@@ -8,40 +20,61 @@
   }
 
   .intro {
-    margin: 2% 0;
-    display: flex;
-    justify-content: column;
-    text-align: center;
+    margin: 1% 0;
   }
 
   button {
-    margin: 2% 0;
+    width: 25%;
+    margin: 2% auto;
+    text-align: center;
+
+    @media (max-width: 800px) {
+      width: 30%;
+    }
   }
 }
 
 .section2 {
-  display: flex;
-  margin: 10% 0;
+  .display-home-mixin();
+  @media (max-width: 500px) {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+  }
   .meet {
-    margin: 5%;
+    margin: 0 5%;
   }
 }
 
 .section3 {
-  display: flex;
-  margin: 10% 0;
+  .display-home-mixin();
+  @media (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+  }
+
   .work {
     margin: 5%;
   }
 
   p {
-    margin: 2% 0;
+    margin: 3% 0;
+  }
+
+  button a {
+    color: #243342;
   }
 }
 
 .section4 {
-  display: flex;
-  margin: 10% 0;
+  .display-home-mixin();
+  @media (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-bottom: 5%;
+  }
 
   .mission {
     margin: 5%;
