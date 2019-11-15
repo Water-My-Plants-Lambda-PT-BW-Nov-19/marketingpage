@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+body {
+  max-width: 1000px;
+}
+h1 {
+  font-size: 2rem;
+}
