@@ -5,7 +5,8 @@
 html,
 body {
   margin: 0 auto;
-  font-size: 1.2rem;
+  //   font-size: 1.2rem;
+  font-family: "Overpass Mono";
 }
 
 body {
@@ -14,9 +15,26 @@ body {
 
 h1 {
   font-size: 2rem;
-  color: @lightblue;
+  color: white;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 2.2rem;
+  margin: 1% 0;
 }
 
 a {
-  .nav-link-mixin(none, @sea-green);
+  .nav-link-mixin(none, 0);
+}
+
+button {
+  .button-mixin();
+}
+
+img {
+  .image-mixin();
 }
