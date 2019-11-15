@@ -141,9 +141,30 @@ h1 {
   font-size: 2rem;
   color: #3db1ff;
 }
+h2 {
+  font-size: 1.8rem;
+}
+h3 {
+  font-size: 1.6rem;
+}
 a {
   text-decoration: none;
   color: #078b75;
+}
+button {
+  display: inline-block;
+  padding: 14px 30px;
+  text-decoration: none;
+  color: #243342;
+  letter-spacing: 1.2px;
+  font-size: 14px;
+  border: 1px solid #078b75;
+  border-radius: 7px;
+  margin-right: 20px;
+  transition: 0.15s ease-in-out;
+}
+img {
+  border-radius: 20px;
 }
 .top {
   height: 100px;
@@ -155,7 +176,7 @@ a {
   margin: 1% 0;
 }
 footer {
-  background: #7d7d7d;
+  background-color: #078b75;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -165,6 +186,13 @@ footer {
   justify-content: space-evenly;
   margin-top: 5%;
   margin-bottom: 2%;
+}
+.footer a {
+  color: white;
+}
+.footer .copyright {
+  color: white;
+  font-size: 0.5rem;
 }
 .section1 {
   margin: 1% 0;
@@ -176,7 +204,22 @@ footer {
   justify-content: column;
   width: 100%;
 }
-.section2 {
+.section2,
+.section3 {
   display: flex;
-  flex-direction: row;
+  margin: 10% 0;
+}
+.section2 .meet,
+.section3 .meet {
+  margin: 5%;
+}
+.section3 {
+  display: flex;
+}
+.section3 .work {
+  margin: 5%;
+}
+.image {
+  text-align: center;
+  margin: 2% 0;
 }
