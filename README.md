@@ -16,7 +16,6 @@ Images:
 - watering-plant : Markus Spiske (Unsplash)
 - three-plants : Carolyn V (Unsplash)
 - brass-kettle : Kaufmann Mercantile (Unsplash)
-- plant-growth : http://www.newdesignfile.com/post_growing-plant-vector_59008/
 - growing-plant: Matt Montgomery (Unsplash)
 - flowers - Anastasia Zhenin (Unsplash)
 
