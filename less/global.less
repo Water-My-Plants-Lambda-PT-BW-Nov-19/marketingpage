@@ -1,11 +1,16 @@
-* {
-  box-sizing: border-box;
-  margin: 0 auto;
-}
+@import url("https://fonts.googleapis.com/css?family=Overpass+Mono&display=swap");
 
 html,
 body {
-  font-family: "Overpass Mono";
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass Mono", monospace !important;
+  font-weight: 300;
 }
 
 .container {
@@ -34,7 +39,9 @@ h3 {
 }
 
 a {
-  .nav-link-mixin();
+  text-decoration: none;
+  margin: 0 10px;
+  .nav-a-mixin();
 }
 
 button {
@@ -45,7 +52,6 @@ img {
   .image-mixin();
 }
 
-a.active {
-  color: black;
-  font-weight: 500;
+.fab {
+  font-family: "Font Awesome 5 Brands" !important;
 }
