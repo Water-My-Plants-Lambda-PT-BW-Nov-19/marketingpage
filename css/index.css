@@ -313,211 +313,6 @@ footer {
   color: white;
   font-size: 0.5rem;
 }
-h2 {
-  margin-bottom: 2%;
-}
-h3 {
-  font-size: 2.8rem;
-  margin-bottom: 2%;
-}
-#blog,
-#recent,
-#follow-us {
-  color: #3db1ff;
-}
-#blog {
-  text-align: center;
-  font-size: 3rem;
-}
-.date {
-  font-size: 0.8rem;
-  margin: 1% 0;
-}
-.blog-section {
-  display: flex;
-  margin-bottom: 5%;
-}
-.blog-section .blog1 {
-  padding-right: 5%;
-}
-@media (max-width: 800px) {
-  .blog-section .blog1 {
-    margin: 0 5px;
-  }
-}
-@media (max-width: 800px) {
-  .blog-section .image-growing {
-    display: flex;
-    justify-content: center;
-  }
-}
-.blog-section .image-growing #growing-plant {
-  text-align: center;
-  height: 600px;
-  width: 500px;
-}
-@media (max-width: 800px) {
-  .blog-section .image-growing #growing-plant {
-    height: 350px;
-    width: 600px;
-  }
-}
-@media (max-width: 500px) {
-  .blog-section .image-growing #growing-plant {
-    width: 90%;
-    height: 200px;
-    border-radius: 20px;
-  }
-}
-.blog-section .content {
-  display: flex;
-  flex-direction: column;
-  margin-left: 2.5%;
-  width: 65%;
-}
-@media (max-width: 800px) {
-  .blog-section .content {
-    width: 100%;
-    margin: 20px 0;
-  }
-}
-@media (max-width: 800px) {
-  .blog-section .content .all-posts {
-    display: flex;
-    flex-direction: row;
-  }
-}
-@media (max-width: 500px) {
-  .blog-section .content .all-posts {
-    display: flex;
-    flex-direction: column;
-  }
-}
-.blog-section .content .post {
-  margin: 5% 8%;
-  padding: 2%;
-  border: 2px solid #0097a7;
-  border-radius: 5px;
-}
-@media (max-width: 800px) {
-  .blog-section .content .post {
-    display: flex;
-    flex-direction: column;
-    margin: 0 10px;
-  }
-}
-@media (max-width: 500px) {
-  .blog-section .content .post {
-    margin-bottom: 3%;
-  }
-}
-.blog-section .content .follow {
-  display: flex;
-  flex-direction: column;
-}
-@media (max-width: 800px) {
-  .blog-section .content .follow {
-    margin-top: 5%;
-  }
-}
-.blog-section .content .follow a {
-  font-size: 30px;
-  color: #0097a7;
-  transition: all 0.3s ease-in-out;
-}
-.blog-section .content .follow a:hover {
-  color: black;
-}
-@media (max-width: 800px) {
-  .blog-section {
-    display: flex;
-    flex-direction: column;
-  }
-}
-.img-home {
-  height: 400px;
-  width: 50%;
-}
-@media (max-width: 500px) {
-  .img-home {
-    width: 90%;
-    height: 200px;
-  }
-}
-.section1 {
-  width: auto;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-.section1 h2 {
-  margin: 2% 0;
-}
-.section1 .intro {
-  margin: 1% 0;
-}
-.section1 button {
-  width: 25%;
-  margin: 2% auto;
-  text-align: center;
-}
-@media (max-width: 800px) {
-  .section1 button {
-    width: 30%;
-  }
-}
-.section2 {
-  display: flex;
-  align-items: center;
-  margin: 5% 0;
-}
-@media (max-width: 500px) {
-  .section2 {
-    display: flex;
-    flex-direction: column-reverse;
-    margin: 0;
-  }
-}
-.section2 .meet {
-  margin: 0 5%;
-}
-.section3 {
-  display: flex;
-  align-items: center;
-  margin: 5% 0;
-}
-@media (max-width: 500px) {
-  .section3 {
-    display: flex;
-    flex-direction: column;
-    margin-top: 5%;
-  }
-}
-.section3 .work {
-  margin: 5%;
-}
-.section3 p {
-  margin: 3% 0;
-}
-.section3 button a {
-  color: #243342;
-}
-.section4 {
-  display: flex;
-  align-items: center;
-  margin: 5% 0;
-}
-@media (max-width: 500px) {
-  .section4 {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    margin-bottom: 5%;
-  }
-}
-.section4 .mission {
-  margin: 5%;
-}
 a,
 button {
   display: inline-block;
@@ -823,4 +618,209 @@ button {
     text-align: center;
     font-size: 38px;
   }
+}
+h2 {
+  margin-bottom: 2%;
+}
+h3 {
+  font-size: 2.8rem;
+  margin-bottom: 2%;
+}
+#blog,
+#recent,
+#follow-us {
+  color: #3db1ff;
+}
+#blog {
+  text-align: center;
+  font-size: 3rem;
+}
+.date {
+  font-size: 0.8rem;
+  margin: 1% 0;
+}
+.blog-section {
+  display: flex;
+  margin-bottom: 5%;
+}
+.blog-section .blog1 {
+  padding-right: 5%;
+}
+@media (max-width: 800px) {
+  .blog-section .blog1 {
+    margin: 0 5px;
+  }
+}
+@media (max-width: 800px) {
+  .blog-section .image-growing {
+    display: flex;
+    justify-content: center;
+  }
+}
+.blog-section .image-growing #growing-plant {
+  text-align: center;
+  height: 600px;
+  width: 500px;
+}
+@media (max-width: 800px) {
+  .blog-section .image-growing #growing-plant {
+    height: 350px;
+    width: 600px;
+  }
+}
+@media (max-width: 500px) {
+  .blog-section .image-growing #growing-plant {
+    width: 90%;
+    height: 200px;
+    border-radius: 20px;
+  }
+}
+.blog-section .tips {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.5%;
+  width: 65%;
+}
+@media (max-width: 800px) {
+  .blog-section .tips {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+@media (max-width: 800px) {
+  .blog-section .tips .all-posts {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (max-width: 500px) {
+  .blog-section .tips .all-posts {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.blog-section .tips .post {
+  margin: 5% 8%;
+  padding: 2%;
+  border: 2px solid #0097a7;
+  border-radius: 5px;
+}
+@media (max-width: 800px) {
+  .blog-section .tips .post {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+  }
+}
+@media (max-width: 500px) {
+  .blog-section .tips .post {
+    margin-bottom: 3%;
+  }
+}
+.blog-section .tips .follow {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 800px) {
+  .blog-section .tips .follow {
+    margin-top: 5%;
+  }
+}
+.blog-section .tips .follow a {
+  font-size: 30px;
+  color: #0097a7;
+  transition: all 0.3s ease-in-out;
+}
+.blog-section .tips .follow a:hover {
+  color: black;
+}
+@media (max-width: 800px) {
+  .blog-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.img-home {
+  height: 400px;
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .img-home {
+    width: 90%;
+    height: 200px;
+  }
+}
+.section1 {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.section1 h2 {
+  margin: 2% 0;
+}
+.section1 .intro {
+  margin: 1% 0;
+}
+.section1 button {
+  width: 25%;
+  margin: 2% auto;
+  text-align: center;
+}
+@media (max-width: 800px) {
+  .section1 button {
+    width: 30%;
+  }
+}
+.section2 {
+  display: flex;
+  align-items: center;
+  margin: 5% 0;
+}
+@media (max-width: 500px) {
+  .section2 {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 0;
+  }
+}
+.section2 .meet {
+  margin: 0 5%;
+}
+.section3 {
+  display: flex;
+  align-items: center;
+  margin: 5% 0;
+}
+@media (max-width: 500px) {
+  .section3 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+  }
+}
+.section3 .work {
+  margin: 5%;
+}
+.section3 p {
+  margin: 3% 0;
+}
+.section3 button a {
+  color: #243342;
+}
+.section4 {
+  display: flex;
+  align-items: center;
+  margin: 5% 0;
+}
+@media (max-width: 500px) {
+  .section4 {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-bottom: 5%;
+  }
+}
+.section4 .mission {
+  margin: 5%;
 }
