@@ -1,6 +1,7 @@
 .img-home {
   height: 400px;
   width: 50%;
+
   @media (max-width: 500px) {
     width: 90%;
     height: 200px;
@@ -8,8 +9,8 @@
 }
 
 .section1 {
-  //   background-image: ;
-  //   margin: 0 10%;
+  //   background-image: url(../images/three-plants.jpg);
+
   width: auto;
   display: flex;
   flex-direction: column;
@@ -27,9 +28,13 @@
     width: 25%;
     margin: 2% auto;
     text-align: center;
+    // color: white;
 
     @media (max-width: 800px) {
       width: 30%;
+    }
+    @media (max-width: 500px) {
+      padding: 14px 13px;
     }
   }
 }
@@ -39,10 +44,13 @@
   @media (max-width: 500px) {
     display: flex;
     flex-direction: column-reverse;
-    margin: 0;
   }
   .meet {
     margin: 0 5%;
+  }
+
+  p {
+    margin: 2% 0;
   }
 }
 
@@ -62,8 +70,9 @@
     margin: 3% 0;
   }
 
-  button a {
-    color: #243342;
+  a {
+    color: white;
+    background: #078b75;
   }
 }
 
@@ -72,11 +81,18 @@
   @media (max-width: 500px) {
     display: flex;
     flex-direction: column;
+
     margin: 0;
     margin-bottom: 5%;
   }
 
+  display: flex;
+  justify-content: space-evenly;
   .mission {
     margin: 5%;
+  }
+
+  p {
+    margin: 2% 0;
   }
 }

@@ -16,8 +16,9 @@ Images:
 - watering-plant : Markus Spiske (Unsplash)
 - three-plants : Carolyn V (Unsplash)
 - brass-kettle : Kaufmann Mercantile (Unsplash)
-- growing-plant: Matt Montgomery (Unsplash)
 - flowers - Anastasia Zhenin (Unsplash)
+- Chris Lee (Unsplash)
+- Scott Webb (Unsplash)
 
 # Team:
 

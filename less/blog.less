@@ -1,21 +1,22 @@
 h2 {
-  margin-bottom: 2%;
-}
-
-h3 {
-  font-size: 2.8rem;
-  margin-bottom: 2%;
+  margin: 2% 0;
 }
 
 #blog,
-#recent,
-#follow-us {
+#help-tips {
   color: @lightblue;
 }
 
 #blog {
   text-align: center;
-  font-size: 3rem;
+
+  @media (max-width: 500px) {
+    margin: 0 0 2% 0;
+  }
+}
+
+#help-tips {
+  text-align: center;
 }
 
 .date {
@@ -25,12 +26,20 @@ h3 {
 
 .blog-section {
   display: flex;
-  margin-bottom: 5%;
+  padding-bottom: 5%;
 
   .blog1 {
-    padding-right: 5%;
+    margin-left: 2%;
+    width: 95%;
     @media (max-width: 800px) {
       margin: 0 5px;
+    }
+
+    .current {
+      @media (max-width: 800px) {
+        width: 90%;
+        margin: auto;
+      }
     }
   }
 
@@ -42,8 +51,8 @@ h3 {
     }
     #growing-plant {
       text-align: center;
-      height: 600px;
-      width: 500px;
+      height: 65%x;
+      width: 80%;
       @media (max-width: 800px) {
         height: 350px;
         width: 600px;
@@ -67,7 +76,7 @@ h3 {
       margin: 20px 0;
     }
 
-    .all-posts {
+    .all-tips {
       @media (max-width: 800px) {
         display: flex;
         flex-direction: row;
@@ -76,34 +85,25 @@ h3 {
         display: flex;
         flex-direction: column;
       }
-    }
 
-    .post {
-      margin: 5% 8%;
-      padding: 2%;
-      border: 2px solid @main-blue;
-      border-radius: 5px;
-      @media (max-width: 800px) {
-        display: flex;
-        flex-direction: column;
-        margin: 0 10px;
-      }
-      @media (max-width: 500px) {
-        margin-bottom: 3%;
-      }
-    }
-
-    .follow {
-      display: flex;
-      flex-direction: column;
-      @media (max-width: 800px) {
-        margin-top: 5%;
-      }
-
-      a {
-        font-size: 30px;
-        color: @main-blue;
-        .hover-trans-mixin();
+      .post {
+        margin: 5% 0%;
+        padding: 2%;
+        border: 2px solid @main-blue;
+        border-radius: 5px;
+        @media (max-width: 800px) {
+          display: flex;
+          flex-direction: column;
+          margin: 0 10px;
+          width: 33.33%;
+        }
+        @media (max-width: 500px) {
+          display: flex;
+          justify-content: space-evenly;
+          //   margin: 0 0 3% 0;
+          margin-bottom: 3%;
+          width: 95%;
+        }
       }
     }
   }
