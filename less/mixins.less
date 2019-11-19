@@ -1,21 +1,16 @@
-.nav-link-mixin(@decoration, @color) {
-  text-decoration: @decoration;
-  color: @color;
-}
-
 .nav-bar-mixin() {
   background-color: #078b75;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 5%;
+  padding: 5px 2.5%;
   letter-spacing: 1.2px;
+  width: 100%;
+}
 
-  a {
-    color: white;
-    // transition: 0.15s ease-in-out;
-  }
-  a:hover {
+.nav-a-mixin() {
+  transition: all 0.3s ease-in-out;
+  &:hover {
     background-color: #078b75;
     color: black;
   }
@@ -27,7 +22,7 @@
   text-decoration: none;
   color: #243342;
   letter-spacing: 1.2px;
-  font-size: 14px;
+  //   font-size: 14px;
   border: 1px solid #078b75;
   border-radius: 7px;
   margin-right: 20px;
@@ -36,4 +31,18 @@
 
 .image-mixin() {
   border-radius: 20px;
+}
+
+.display-home-mixin() {
+  display: flex;
+  //   align-items: center;
+  margin: 5% 0;
+}
+
+.hover-trans-mixin() {
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: black;
+  }
 }

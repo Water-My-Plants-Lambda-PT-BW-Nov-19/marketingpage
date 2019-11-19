@@ -107,10 +107,6 @@ section {
 body {
   line-height: 1;
 }
-ol,
-ul {
-  list-style: none;
-}
 blockquote,
 q {
   quotes: none;
@@ -127,38 +123,49 @@ table {
   border-spacing: 0;
 }
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  font-family: "Overpass Mono", monospace !important;
 }
-html,
-body {
-  margin: 0 auto;
-  font-family: "Overpass Mono";
-}
-body {
+.container {
   max-width: 1000px;
+  margin: 0 auto;
 }
 h1 {
   font-size: 2rem;
   color: white;
+}
+@media (max-width: 800px) {
+  h1 {
+    font-size: 1.6rem;
+  }
 }
 h2 {
   font-size: 1.8rem;
 }
 h3 {
   font-size: 2.2rem;
-  margin: 1% 0;
+}
+.container {
+  width: 100%;
 }
 a {
   text-decoration: none;
-  color: 0;
+  margin: 0 10px;
+  transition: all 0.3s ease-in-out;
 }
+a:hover {
+  background-color: #078b75;
+  color: black;
+}
+a,
 button {
   display: inline-block;
   padding: 14px 30px;
   text-decoration: none;
   color: #243342;
   letter-spacing: 1.2px;
-  font-size: 14px;
   border: 1px solid #078b75;
   border-radius: 7px;
   margin-right: 20px;
@@ -167,88 +174,334 @@ button {
 img {
   border-radius: 20px;
 }
-.top {
+.fab {
+  font-family: "Font Awesome 5 Brands" !important;
+}
+.nav-spacer {
+  height: 60px;
+}
+@media (max-width: 800px) {
+  .nav-spacer {
+    height: 80px;
+  }
+}
+@media (max-width: 500px) {
+  .nav-spacer {
+    height: 100px;
+  }
+}
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
   background-color: #078b75;
+  margin-bottom: 5%;
+}
+@media (max-width: 800px) {
+  nav {
+    padding: 10px 0;
+  }
+}
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+}
+nav .wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 15px 5%;
-  letter-spacing: 1.2px;
 }
-.top a {
+@media (max-width: 500px) {
+  nav .wrapper {
+    padding: 0 !important;
+  }
+}
+@media (max-width: 500px) {
+  nav .wrapper a {
+    margin-bottom: 0;
+  }
+}
+nav a {
   color: white;
-}
-.top a:hover {
-  background-color: #078b75;
-  color: black;
+  text-decoration: none;
+  padding: 5px 15px;
+  letter-spacing: 1.2;
+  border: none;
+  margin: 0;
 }
 footer {
   background-color: #078b75;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px 5%;
-  letter-spacing: 1.2px;
   display: flex;
   flex-direction: column;
   text-align: center;
+  width: 100%;
 }
-footer a {
-  color: white;
-}
-footer a:hover {
-  background-color: #078b75;
-  color: black;
-}
-footer a {
-  margin: 0 10%;
-}
-.footer {
+footer .footer {
   display: flex;
   justify-content: space-evenly;
-  margin-bottom: 2%;
+  margin-top: 1%;
+  width: 100%;
 }
-.footer .copyright {
+@media (max-width: 800px) {
+  footer .footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+footer .footer a,
+footer .footer .follow {
+  margin: 0 5%;
   color: white;
-  font-size: 0.5rem;
+  padding: 0;
+}
+@media (max-width: 800px) {
+  footer .footer a,
+  footer .footer .follow {
+    margin: 0;
+    padding: 0;
+  }
+}
+footer .follow {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 800px) {
+  footer .follow {
+    margin-top: 5%;
+  }
+}
+footer .follow #follow-us {
+  font-size: 14px;
+}
+footer .follow a {
+  font-size: 25px;
+  color: #0097a7;
+  border: none;
+  padding: 0;
+  margin-right: 0;
+  transition: all 0.3s ease-in-out;
+}
+footer .follow a:hover {
+  color: black;
+}
+footer .copyright {
+  color: black;
+  font-size: 1rem;
+}
+h2 {
+  margin: 2% 0;
+}
+#blog,
+#help-tips {
+  color: #3db1ff;
+}
+#blog {
+  text-align: center;
+}
+@media (max-width: 500px) {
+  #blog {
+    margin: 0 0 2% 0;
+  }
+}
+#help-tips {
+  text-align: center;
+}
+.date {
+  font-size: 0.8rem;
+  margin: 1% 0;
+}
+.blog-section {
+  display: flex;
+  padding-bottom: 5%;
+}
+.blog-section .blog1 {
+  margin-left: 2%;
+  width: 95%;
+}
+@media (max-width: 800px) {
+  .blog-section .blog1 {
+    margin: 0 5px;
+  }
+}
+@media (max-width: 800px) {
+  .blog-section .blog1 .current {
+    width: 90%;
+    margin: auto;
+  }
+}
+@media (max-width: 800px) {
+  .blog-section .image-growing {
+    display: flex;
+    justify-content: center;
+  }
+}
+.blog-section .image-growing #growing-plant {
+  text-align: center;
+  height: 65%x;
+  width: 80%;
+}
+@media (max-width: 800px) {
+  .blog-section .image-growing #growing-plant {
+    height: 350px;
+    width: 600px;
+  }
+}
+@media (max-width: 500px) {
+  .blog-section .image-growing #growing-plant {
+    width: 90%;
+    height: 200px;
+    border-radius: 20px;
+  }
+}
+.blog-section .tips {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.5%;
+  width: 65%;
+}
+@media (max-width: 800px) {
+  .blog-section .tips {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+@media (max-width: 800px) {
+  .blog-section .tips .all-tips {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (max-width: 500px) {
+  .blog-section .tips .all-tips {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.blog-section .tips .all-tips .post {
+  margin: 5% 0%;
+  padding: 2%;
+  border: 2px solid #0097a7;
+  border-radius: 5px;
+}
+@media (max-width: 800px) {
+  .blog-section .tips .all-tips .post {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    width: 33.33%;
+  }
+}
+@media (max-width: 500px) {
+  .blog-section .tips .all-tips .post {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 3%;
+    width: 95%;
+  }
+}
+@media (max-width: 800px) {
+  .blog-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.img-home {
+  height: 400px;
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .img-home {
+    width: 90%;
+    height: 200px;
+  }
 }
 .section1 {
-  margin: 1% 10%;
-  width: 100%;
+  width: auto;
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
 .section1 h2 {
   margin: 2% 0;
 }
 .section1 .intro {
-  margin: 2% 0;
-  display: flex;
-  justify-content: column;
-  text-align: center;
+  margin: 1% 0;
 }
 .section1 button {
-  margin: 2% 0;
+  width: 25%;
+  margin: 2% auto;
+  text-align: center;
+}
+@media (max-width: 800px) {
+  .section1 button {
+    width: 30%;
+  }
+}
+@media (max-width: 500px) {
+  .section1 button {
+    padding: 14px 13px;
+  }
 }
 .section2 {
   display: flex;
-  margin: 10% 0;
+  margin: 5% 0;
+}
+@media (max-width: 500px) {
+  .section2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 .section2 .meet {
-  margin: 5%;
+  margin: 0 5%;
+}
+.section2 p {
+  margin: 2% 0;
 }
 .section3 {
   display: flex;
-  margin: 10% 0;
+  margin: 5% 0;
+}
+@media (max-width: 500px) {
+  .section3 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+  }
 }
 .section3 .work {
   margin: 5%;
 }
 .section3 p {
-  margin: 2% 0;
+  margin: 3% 0;
+}
+.section3 a {
+  color: white;
+  background: #078b75;
 }
 .section4 {
+  margin: 5% 0;
   display: flex;
-  margin: 10% 0;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .section4 {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-bottom: 5%;
+  }
 }
 .section4 .mission {
   margin: 5%;
+}
+.section4 p {
+  margin: 2% 0;
 }
