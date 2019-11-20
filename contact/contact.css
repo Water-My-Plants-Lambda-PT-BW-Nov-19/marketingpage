@@ -296,6 +296,7 @@ button {
 }
 
 
+
 @media screen and (max-width: 900px){
 	.content{
 		padding: 10px 0 0;
@@ -318,6 +319,7 @@ button {
 		width: 100%;
 	}
 }
+
 
 @media screen and (max-height: 660px){
 	.content{
@@ -362,3 +364,4 @@ button {
         font-size: 38px;
     }
 }
+
