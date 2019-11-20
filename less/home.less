@@ -5,31 +5,38 @@
   @media (max-width: 500px) {
     width: 90%;
     height: 200px;
+    margin-left: 5%;
   }
 }
 
 .section1 {
-  //   background-image: url(../images/three-plants.jpg);
-
   width: auto;
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-top: 5%;
+
+  @media (max-width: 500px) {
+    margin-top: 3%;
+  }
 
   h2 {
     margin: 2% 0;
+
+    b {
+      color: @sea-green;
+      font-size: 2rem;
+    }
   }
 
   .intro {
     margin: 1% 0;
   }
 
-  button {
+  a {
     width: 25%;
     margin: 2% auto;
     text-align: center;
-    color: white !important;
-    background: #078b75 !important;
 
     @media (max-width: 800px) {
       width: 30%;
@@ -47,7 +54,7 @@
     flex-direction: column-reverse;
   }
   .meet {
-    margin: 0 5%;
+    margin: 5%;
   }
 
   p {
