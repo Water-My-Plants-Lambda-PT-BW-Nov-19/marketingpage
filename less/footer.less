@@ -8,6 +8,7 @@ footer {
   .footer {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     margin-top: 1%;
     width: 100%;
 
@@ -17,13 +18,19 @@ footer {
       justify-content: space-evenly;
     }
 
-    a,
-    .follow {
-      margin: 0 5%;
-      color: white;
-      padding: 0;
+    a {
+      .nav-a-mixin();
+      .follow {
+        margin: 0 5%;
+        color: white;
+        padding: 0;
 
-      @media (max-width: 800px) {
+        @media (max-width: 800px) {
+          margin: 0;
+          padding: 0;
+        }
+      }
+      @media (max-width: 500px) {
         margin: 0;
         padding: 0;
       }

@@ -132,6 +132,11 @@ table {
   max-width: 1000px;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    padding: 0 1%;
+  }
+}
 h1 {
   font-size: 2rem;
   color: white;
@@ -246,6 +251,7 @@ footer {
 footer .footer {
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
   margin-top: 1%;
   width: 100%;
 }
@@ -256,15 +262,26 @@ footer .footer {
     justify-content: space-evenly;
   }
 }
-footer .footer a,
-footer .footer .follow {
+footer .footer a {
+  transition: all 0.3s ease-in-out;
+}
+footer .footer a:hover {
+  background-color: #078b75;
+  color: black;
+}
+footer .footer a .follow {
   margin: 0 5%;
   color: white;
   padding: 0;
 }
 @media (max-width: 800px) {
-  footer .footer a,
-  footer .footer .follow {
+  footer .footer a .follow {
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (max-width: 500px) {
+  footer .footer a {
     margin: 0;
     padding: 0;
   }
@@ -421,6 +438,7 @@ h2 {
   .img-home {
     width: 90%;
     height: 200px;
+    margin-left: 5%;
   }
 }
 .section1 {
@@ -470,6 +488,11 @@ h2 {
 }
 .section2 p {
   margin: 2% 0;
+}
+@media (max-width: 500px) {
+  .section2 h3 {
+    margin-top: 3%;
+  }
 }
 .section3 {
   display: flex;
