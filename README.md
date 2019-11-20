@@ -17,6 +17,7 @@ Images:
 - three-plants : Carolyn V (Unsplash)
 - brass-kettle : Kaufmann Mercantile (Unsplash)
 - flowers - Anastasia Zhenin (Unsplash)
+- soil-plants - Daniel Hjalmarsson (Unsplash)
 - Chris Lee (Unsplash)
 - Scott Webb (Unsplash)
 
