@@ -164,9 +164,9 @@ button {
   display: inline-block;
   padding: 14px 30px;
   text-decoration: none;
-  color: #243342;
+  color: white;
+  background: #078b75;
   letter-spacing: 1.2px;
-  border: 1px solid #078b75;
   border-radius: 7px;
   margin-right: 20px;
   transition: 0.15s ease-in-out;
@@ -438,6 +438,8 @@ h2 {
   width: 25%;
   margin: 2% auto;
   text-align: center;
+  color: white !important;
+  background: #078b75 !important;
 }
 @media (max-width: 800px) {
   .section1 button {
