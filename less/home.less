@@ -9,12 +9,16 @@
 }
 
 .section1 {
-  //   background-image: url(../images/three-plants.jpg);
+  b {
+    color: @sea-green;
+    font-size: 2rem;
+  }
 
   width: auto;
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-top: 2%;
 
   h2 {
     margin: 2% 0;
@@ -24,12 +28,10 @@
     margin: 1% 0;
   }
 
-  button {
+  a {
     width: 25%;
     margin: 2% auto;
     text-align: center;
-    color: white !important;
-    background: #078b75 !important;
 
     @media (max-width: 800px) {
       width: 30%;
@@ -72,8 +74,7 @@
   }
 
   a {
-    color: white;
-    background: #078b75;
+    .button-mixin();
   }
 }
 

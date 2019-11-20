@@ -146,6 +146,7 @@ h2 {
 }
 h3 {
   font-size: 2.2rem;
+  color: #3db1ff;
 }
 .container {
   width: 100%;
@@ -282,7 +283,7 @@ footer .follow #follow-us {
 }
 footer .follow a {
   font-size: 25px;
-  color: #0097a7;
+  color: white;
   border: none;
   padding: 0;
   margin-right: 0;
@@ -427,6 +428,11 @@ h2 {
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-top: 2%;
+}
+.section1 b {
+  color: #078b75;
+  font-size: 2rem;
 }
 .section1 h2 {
   margin: 2% 0;
@@ -434,20 +440,18 @@ h2 {
 .section1 .intro {
   margin: 1% 0;
 }
-.section1 button {
+.section1 a {
   width: 25%;
   margin: 2% auto;
   text-align: center;
-  color: white !important;
-  background: #078b75 !important;
 }
 @media (max-width: 800px) {
-  .section1 button {
+  .section1 a {
     width: 30%;
   }
 }
 @media (max-width: 500px) {
-  .section1 button {
+  .section1 a {
     padding: 14px 13px;
   }
 }
@@ -485,8 +489,15 @@ h2 {
   margin: 3% 0;
 }
 .section3 a {
+  display: inline-block;
+  padding: 14px 30px;
+  text-decoration: none;
   color: white;
   background: #078b75;
+  letter-spacing: 1.2px;
+  border-radius: 7px;
+  margin-right: 20px;
+  transition: 0.15s ease-in-out;
 }
 .section4 {
   margin: 5% 0;
