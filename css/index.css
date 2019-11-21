@@ -188,16 +188,11 @@ img {
   font-family: "Font Awesome 5 Brands" !important;
 }
 .nav-spacer {
-  height: 60px;
+  height: 4rem;
 }
 @media (max-width: 800px) {
   .nav-spacer {
-    height: 80px;
-  }
-}
-@media (max-width: 500px) {
-  .nav-spacer {
-    height: 150px;
+    height: 6rem;
   }
 }
 nav {
@@ -214,6 +209,9 @@ nav {
   }
 }
 @media (max-width: 500px) {
+  nav {
+    padding: 0;
+  }
 }
 nav .wrapper {
   display: flex;
@@ -222,6 +220,16 @@ nav .wrapper {
   padding: 15px 5%;
 }
 @media (max-width: 500px) {
+  nav .wrapper {
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  nav .wrapper a {
+    padding: 2% 0;
+  }
 }
 nav a {
   color: white;
@@ -234,58 +242,20 @@ nav a {
 footer {
   background-color: #078b75;
   display: flex;
-  flex-direction: column;
   text-align: center;
   width: 100%;
   overflow: hidden;
   position: absolute;
   bottom: 0;
 }
-footer .footer {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 1%;
-  width: 100%;
-}
-@media (max-width: 800px) {
-  footer .footer {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-  }
-}
-footer .footer a {
-  transition: all 0.3s ease-in-out;
-}
-footer .footer a:hover {
-  background-color: #078b75;
-  color: black;
-}
-footer .footer a .follow {
-  margin: 0 5%;
-  color: white;
-  padding: 0;
-}
-@media (max-width: 800px) {
-  footer .footer a .follow {
-    margin: 0;
-    padding: 0;
-  }
-}
-@media (max-width: 500px) {
-  footer .footer a {
-    margin: 0;
-    padding: 0;
-  }
-}
 footer .follow {
   display: flex;
   flex-direction: column;
+  margin-right: 5%;
 }
 @media (max-width: 800px) {
   footer .follow {
-    margin-top: 5%;
+    margin-top: 1%;
   }
 }
 footer .follow #follow-us {
@@ -305,6 +275,17 @@ footer .follow a:hover {
 footer .copyright {
   color: black;
   font-size: 1rem;
+  margin: auto;
+}
+@media (max-width: 800px) {
+  footer .copyright {
+    margin: 1% auto;
+  }
+}
+@media (max-width: 500px) {
+  footer .copyright {
+    margin: auto;
+  }
 }
 #home-footer {
   position: absolute;
@@ -425,6 +406,21 @@ footer .copyright {
 .section4 p {
   margin: 2% 0;
 }
+.social-icons .a {
+  display: none;
+}
+.img-fluid {
+  width: 200px;
+  border-radius: 10px;
+}
+img[src="images/IMG_20190807_172312_168.png"] {
+  width: 200px;
+  height: 200px;
+}
+img[src="images/0957f9c11ba2367 (1).jpg"] {
+  width: 200px;
+  height: 200px;
+}
 h2 {
   margin: 2% 0;
 }
@@ -544,15 +540,18 @@ h2 {
   }
 }
 .content {
-  position: fixed;
-  top: 60px;
-  height: 100%;
+  margin-top: 3%;
+  height: auto;
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
   overflow: auto;
   padding: 20px;
+}
+@media (max-width: 500px) {
+  .content {
+    margin-top: 0;
+  }
 }
 .content .contact {
   width: 80%;
