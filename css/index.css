@@ -1,0 +1,527 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass Mono", monospace !important;
+}
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+@media (max-width: 500px) {
+  .container {
+    padding: 0 1%;
+  }
+}
+h1 {
+  font-size: 2rem;
+  color: white;
+}
+@media (max-width: 800px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+}
+h2 {
+  font-size: 1.8rem;
+}
+h3 {
+  font-size: 2.2rem;
+  color: #3db1ff;
+}
+.container {
+  width: 100%;
+}
+a {
+  text-decoration: none;
+  margin: 0 10px;
+  transition: all 0.3s ease-in-out;
+}
+a:hover {
+  background-color: #078b75;
+  color: black;
+}
+a,
+button {
+  display: inline-block;
+  padding: 14px 30px;
+  text-decoration: none;
+  color: white;
+  background: #078b75;
+  letter-spacing: 1.2px;
+  border-radius: 7px;
+  margin-right: 20px;
+  transition: 0.15s ease-in-out;
+}
+img {
+  border-radius: 20px;
+}
+.fab {
+  font-family: "Font Awesome 5 Brands" !important;
+}
+.nav-spacer {
+  height: 60px;
+}
+@media (max-width: 800px) {
+  .nav-spacer {
+    height: 80px;
+  }
+}
+@media (max-width: 500px) {
+  .nav-spacer {
+    height: 100px;
+  }
+}
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  background-color: #078b75;
+  margin-bottom: 5%;
+}
+@media (max-width: 800px) {
+  nav {
+    padding: 10px 0;
+  }
+}
+@media (max-width: 500px) {
+}
+nav .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 5%;
+}
+@media (max-width: 500px) {
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 15px;
+  letter-spacing: 1.2;
+  border: none;
+  margin: 0;
+}
+footer {
+  background-color: #078b75;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+}
+footer .footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1%;
+  width: 100%;
+}
+@media (max-width: 800px) {
+  footer .footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+footer .footer a {
+  transition: all 0.3s ease-in-out;
+}
+footer .footer a:hover {
+  background-color: #078b75;
+  color: black;
+}
+footer .footer a .follow {
+  margin: 0 5%;
+  color: white;
+  padding: 0;
+}
+@media (max-width: 800px) {
+  footer .footer a .follow {
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (max-width: 500px) {
+  footer .footer a {
+    margin: 0;
+    padding: 0;
+  }
+}
+footer .follow {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 800px) {
+  footer .follow {
+    margin-top: 5%;
+  }
+}
+footer .follow #follow-us {
+  font-size: 14px;
+}
+footer .follow a {
+  font-size: 25px;
+  color: white;
+  border: none;
+  padding: 0;
+  margin-right: 0;
+  transition: all 0.3s ease-in-out;
+}
+footer .follow a:hover {
+  color: black;
+}
+footer .copyright {
+  color: black;
+  font-size: 1rem;
+}
+h2 {
+  margin: 2% 0;
+}
+#blog,
+#help-tips {
+  color: #3db1ff;
+}
+#blog {
+  text-align: center;
+}
+@media (max-width: 500px) {
+  #blog {
+    margin: 0 0 2% 0;
+  }
+}
+#help-tips {
+  text-align: center;
+}
+.date {
+  font-size: 0.8rem;
+  margin: 1% 0;
+}
+.blog-section {
+  display: flex;
+  padding-bottom: 5%;
+}
+.blog-section .blog1 {
+  margin-left: 2%;
+  width: 95%;
+}
+@media (max-width: 800px) {
+  .blog-section .blog1 {
+    margin: 0 5px;
+  }
+}
+@media (max-width: 800px) {
+  .blog-section .blog1 .current {
+    width: 90%;
+    margin: auto;
+  }
+}
+@media (max-width: 800px) {
+  .blog-section .image-growing {
+    display: flex;
+    justify-content: center;
+  }
+}
+.blog-section .image-growing #growing-plant {
+  text-align: center;
+  height: 65%x;
+  width: 80%;
+}
+@media (max-width: 800px) {
+  .blog-section .image-growing #growing-plant {
+    height: 350px;
+    width: 600px;
+  }
+}
+@media (max-width: 500px) {
+  .blog-section .image-growing #growing-plant {
+    width: 90%;
+    height: 200px;
+    border-radius: 20px;
+  }
+}
+.blog-section .tips {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2.5%;
+  width: 65%;
+}
+@media (max-width: 800px) {
+  .blog-section .tips {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+@media (max-width: 800px) {
+  .blog-section .tips .all-tips {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (max-width: 500px) {
+  .blog-section .tips .all-tips {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.blog-section .tips .all-tips .post {
+  margin: 5% 0%;
+  padding: 2%;
+  border: 2px solid #0097a7;
+  border-radius: 5px;
+}
+@media (max-width: 800px) {
+  .blog-section .tips .all-tips .post {
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+    width: 33.33%;
+  }
+}
+@media (max-width: 500px) {
+  .blog-section .tips .all-tips .post {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 3%;
+    width: 95%;
+  }
+}
+@media (max-width: 800px) {
+  .blog-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.img-home {
+  height: 400px;
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .img-home {
+    width: 90%;
+    height: 200px;
+    margin-left: 5%;
+  }
+}
+.section1 {
+  background-image: url("../images/soil-plants.jpeg");
+  background-size: 1000px 750px;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 5%;
+  padding-bottom: 30%;
+}
+@media (max-width: 500px) {
+  .section1 {
+    margin-top: 3%;
+  }
+}
+.section1 h2 {
+  margin: 2% 0;
+}
+.section1 h2 b {
+  color: #078b75;
+  font-size: 2rem;
+}
+.section1 .intro {
+  margin: 1% 0;
+}
+.section1 a {
+  width: 25%;
+  margin: 2% auto;
+  text-align: center;
+}
+@media (max-width: 800px) {
+  .section1 a {
+    width: 30%;
+  }
+}
+@media (max-width: 500px) {
+  .section1 a {
+    padding: 14px 13px;
+  }
+}
+.section2 {
+  display: flex;
+  margin: 5% 0;
+}
+@media (max-width: 500px) {
+  .section2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+.section2 .meet {
+  margin: 5%;
+}
+.section2 p {
+  margin: 2% 0;
+}
+.section3 {
+  display: flex;
+  margin: 5% 0;
+}
+@media (max-width: 500px) {
+  .section3 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+  }
+}
+.section3 .work {
+  margin: 5%;
+}
+.section3 p {
+  margin: 3% 0;
+}
+.section3 a {
+  color: white;
+  background: #078b75;
+}
+.section4 {
+  margin: 5% 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+@media (max-width: 500px) {
+  .section4 {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-bottom: 5%;
+  }
+}
+.section4 .mission {
+  margin: 5%;
+}
+.section4 p {
+  margin: 2% 0;
+}

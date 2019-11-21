@@ -1,0 +1,111 @@
+.img-home {
+  height: 400px;
+  width: 50%;
+
+  @media (max-width: 500px) {
+    width: 90%;
+    height: 200px;
+    margin-left: 5%;
+  }
+}
+
+.section1 {
+  background-image: url("../images/soil-plants.jpeg");
+  background-size: 1000px 750px;
+  background-repeat: no-repeat;
+  .image-mixin();
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 5%;
+  padding-bottom: 30%;
+
+  @media (max-width: 500px) {
+    margin-top: 3%;
+  }
+
+  h2 {
+    margin: 2% 0;
+
+    b {
+      color: @sea-green;
+      font-size: 2rem;
+    }
+  }
+
+  .intro {
+    margin: 1% 0;
+  }
+
+  a {
+    width: 25%;
+    margin: 2% auto;
+    text-align: center;
+
+    @media (max-width: 800px) {
+      width: 30%;
+    }
+    @media (max-width: 500px) {
+      padding: 14px 13px;
+    }
+  }
+}
+
+.section2 {
+  .display-home-mixin();
+  @media (max-width: 500px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .meet {
+    margin: 5%;
+  }
+
+  p {
+    margin: 2% 0;
+  }
+}
+
+.section3 {
+  .display-home-mixin();
+  @media (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+  }
+
+  .work {
+    margin: 5%;
+  }
+
+  p {
+    margin: 3% 0;
+  }
+
+  a {
+    color: white;
+    background: #078b75;
+  }
+}
+
+.section4 {
+  .display-home-mixin();
+  @media (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+    margin-bottom: 5%;
+  }
+
+  display: flex;
+  justify-content: space-evenly;
+  .mission {
+    margin: 5%;
+  }
+
+  p {
+    margin: 2% 0;
+  }
+}
