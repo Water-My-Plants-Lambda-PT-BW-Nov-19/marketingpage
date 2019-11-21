@@ -14,7 +14,7 @@
 
   .contact {
     width: 80%;
-    max-width: 1080px;
+    // max-width: 1080px;
     display: flex;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.28);
     border-radius: 5px;
@@ -35,10 +35,10 @@
       position: relative;
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
+      justify-content: center;
 
       @media (max-width: 800px) {
-        justify-content: center;
+        // justify-content: center;
       }
 
       @media (max-width: 500px) {
@@ -55,7 +55,8 @@
       }
 
       .info {
-        position: relative;
+        // position: relative;
+
         padding: 20px;
         @media (max-width: 800px) {
           padding: 0 5%;
@@ -67,10 +68,10 @@
 
         h2 {
           color: #0097a7;
-          font-size: 70px;
-          padding-left: 100px;
-          padding-bottom: 70px;
-          padding-top: 40px;
+          font-size: 3.6rem;
+          //   padding-left: 100px;
+          //   padding-bottom: 70px;
+          //   padding-top: 40px;
 
           @media (max-width: 800px) {
             padding: 0;
@@ -78,17 +79,17 @@
           }
         }
 
-        h3 {
-          color: #0097a7;
-          font-size: 50px;
-          padding-bottom: 60px;
-          padding-left: 220px;
+        // h3 {
+        //   color: #0097a7;
+        //   font-size: 2.5rem;
+        //   //   padding-bottom: 60px;
+        //   //   padding-left: 220px;
 
-          @media (max-width: 800px) {
-            padding: 0;
-            font-size: 2.5rem;
-          }
-        }
+        //   @media (max-width: 800px) {
+        //     padding: 0;
+        //     font-size: 2.5rem;
+        //   }
+        // }
 
         .svg-wrap {
           display: flex;
@@ -99,14 +100,22 @@
 
           a {
             border: 0;
-            padding-left: 100px;
+            // padding-left: 100px;
             color: white;
             display: flex;
-            font-size: 36px;
+            font-size: 1.4rem;
             justify-content: center;
             align-items: center;
             font-style: bold;
             .nav-a-mixin();
+
+            svg {
+              width: 20px;
+              height: 20px;
+              fill: white;
+              transition: fill 0.2s ease-in-out;
+              margin-right: 13px;
+            }
 
             @media (max-width: 800px) {
               padding: 1% 3%;
