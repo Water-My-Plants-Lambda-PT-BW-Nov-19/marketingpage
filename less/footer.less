@@ -4,8 +4,8 @@ footer {
   flex-direction: column;
   text-align: center;
   width: 100%;
-  position: absolute;
-  bottom: 0;
+  //   position: absolute;
+  //   bottom: 0;
 
   .footer {
     display: flex;
@@ -64,5 +64,14 @@ footer {
   .copyright {
     color: black;
     font-size: 1rem;
+  }
+}
+
+#home-footer {
+  position: absolute;
+  bottom: 0;
+
+  @media (max-height: 1250px) {
+    bottom: auto;
   }
 }
