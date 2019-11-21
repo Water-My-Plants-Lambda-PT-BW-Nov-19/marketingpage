@@ -413,6 +413,9 @@ footer .copyright {
 .section4 p {
   margin: 2% 0;
 }
+#home-footer {
+  bottom: auto;
+}
 h2 {
   margin: 2% 0;
 }
