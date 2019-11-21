@@ -1,8 +1,11 @@
 .content {
   position: fixed;
   top: 60px;
-  height: calc(100vh - 60px);
-  width: 100vw;
+  //   height: calc(100vh - 60px);
+  height: 100%;
+  //   margin-top: 5%;
+  //   width: 100vw;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16,5 +19,158 @@
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.28);
     border-radius: 5px;
     overflow: hidden;
+
+    @media (max-width: 500px) {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .other {
+      width: 60%;
+      /* height:60%; */
+      background-image: url(../images/chris-lee-70l1tDAI6rM-unsplash.jpg);
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      @media (max-width: 800px) {
+        justify-content: center;
+      }
+
+      @media (max-width: 500px) {
+        width: 100%;
+      }
+
+      .other:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+      }
+
+      .info {
+        position: relative;
+        padding: 20px;
+        @media (max-width: 800px) {
+          padding: 0 5%;
+        }
+        @media (max-width: 500px) {
+          padding: 15% 0;
+          text-align: center;
+        }
+
+        h2 {
+          color: #0097a7;
+          font-size: 70px;
+          padding-left: 100px;
+          padding-bottom: 70px;
+          padding-top: 40px;
+
+          @media (max-width: 800px) {
+            padding: 0;
+            font-size: 3rem;
+          }
+        }
+
+        h3 {
+          color: #0097a7;
+          font-size: 50px;
+          padding-bottom: 60px;
+          padding-left: 220px;
+
+          @media (max-width: 800px) {
+            padding: 0;
+            font-size: 2.5rem;
+          }
+        }
+
+        .svg-wrap {
+          display: flex;
+          margin-top: 15px;
+          @media (max-wdith: 500px) {
+            padding-left: 10%;
+          }
+
+          a {
+            border: 0;
+            padding-left: 100px;
+            color: white;
+            display: flex;
+            font-size: 36px;
+            justify-content: center;
+            align-items: center;
+            font-style: bold;
+            .nav-a-mixin();
+
+            @media (max-width: 800px) {
+              padding: 1% 3%;
+              font-size: 1.4rem;
+              align-items: baseline;
+            }
+            @media (max-width: 500px) {
+              margin: 0 auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.form {
+  width: 40%;
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  @media (max-width: 500px) {
+    width: auto;
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 100%;
+  }
+
+  .flex-rev {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 10px;
+    width: 100%;
+
+    input,
+    textarea {
+      border: none;
+      background-color: #e6e6e6;
+      padding: 12px 10px;
+      font-size: 16px;
+      resize: none;
+      margin-top: 7px;
+      margin-bottom: 16px;
+      border-radius: 5px;
+      color: #243342;
+      outline-color: #243342;
+      outline-width: thin;
+      -webkit-appearance: none;
+    }
+
+    textarea {
+      height: 150px;
+    }
   }
 }
