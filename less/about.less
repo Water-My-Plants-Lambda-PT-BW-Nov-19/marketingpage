@@ -1,0 +1,151 @@
+.img-fluid {
+  width: 200px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+.social-icons .a {
+  display: none;
+}
+
+.team {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  padding: 15% 0;
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+
+    span {
+      color: #0097a7;
+    }
+  }
+
+  p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.7;
+    color: #7d7d7d;
+    margin: 20px 0 60px;
+    padding: 0;
+  }
+
+  .box {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.5s ease-in-out;
+    width: 200px;
+    height: 300px;
+    border-radius: 10px;
+    margin: 20px;
+    &:hover {
+      transform: translateY(-15px);
+    }
+    &:hover .social-icons {
+      margin-top: 0;
+      opacity: 1;
+    }
+
+    h3 {
+      margin: 0;
+      padding-left: 25px;
+      margin-top: 20px;
+      font-size: 17px;
+      font-weight: 600;
+    }
+
+    h4 {
+      margin: 0;
+      padding-left: 30px;
+      font-size: 13px;
+      color: #7d7d7d;
+      font-weight: 400;
+      margin-top: 5px;
+      padding-bottom: 25px;
+    }
+
+    .image {
+      position: relative;
+      height: 100%;
+
+      .social-icons {
+        position: absolute;
+        top: 50%;
+        left: 65%;
+        transform: translate(-50%, -50%);
+        color: #ffffff;
+        z-index: 20;
+        text-decoration: none;
+        opacity: 0;
+        margin-top: 100px;
+        padding: 8px 15px;
+        background: transparent;
+        background-image: url(images/GitHub-Mark-64px.png);
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        transition: all 0.5s ease-in-out;
+
+        i {
+          font-size: 18px;
+          padding: 0 7px;
+          color: #ff9100;
+        }
+      }
+    }
+  }
+
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: wrap;
+    width: 90%;
+    height: 100%;
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .first-4 {
+      display: inline-block;
+      flex-direction: column;
+      justify-content: center;
+      flex-flow: row wrap;
+
+      .member {
+        display: inline-block;
+        width: 200px;
+        height: 300px;
+        padding-left: 220px;
+        margin-bottom: 30px;
+      }
+    }
+    .second-4 {
+      .member {
+        display: inline-block;
+        width: 200px;
+        height: 300px;
+        padding-left: 220px;
+      }
+    }
+  }
+
+  .overplay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #ff9100 100%);
+    top: 0;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+    z-index: 15;
+  }
+}

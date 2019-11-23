@@ -156,9 +156,6 @@ h3 {
   font-size: 2.2rem;
   color: #3db1ff;
 }
-.container {
-  width: 100%;
-}
 a {
   text-decoration: none;
   margin: 0 10px;
@@ -188,16 +185,11 @@ img {
   font-family: "Font Awesome 5 Brands" !important;
 }
 .nav-spacer {
-  height: 60px;
+  height: 4rem;
 }
 @media (max-width: 800px) {
   .nav-spacer {
-    height: 80px;
-  }
-}
-@media (max-width: 500px) {
-  .nav-spacer {
-    height: 150px;
+    height: 6rem;
   }
 }
 nav {
@@ -214,14 +206,32 @@ nav {
   }
 }
 @media (max-width: 500px) {
+  nav {
+    padding: 0;
+  }
 }
 nav .wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 5%;
+  padding: 1% 5%;
+}
+@media (max-width: 800px) {
+  nav .wrapper {
+    padding: 0;
+  }
 }
 @media (max-width: 500px) {
+  nav .wrapper {
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  nav .wrapper a {
+    padding: 2% 0;
+  }
 }
 nav a {
   color: white;
@@ -234,55 +244,20 @@ nav a {
 footer {
   background-color: #078b75;
   display: flex;
-  flex-direction: column;
   text-align: center;
   width: 100%;
-}
-footer .footer {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin-top: 1%;
-  width: 100%;
-}
-@media (max-width: 800px) {
-  footer .footer {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-  }
-}
-footer .footer a {
-  transition: all 0.3s ease-in-out;
-}
-footer .footer a:hover {
-  background-color: #078b75;
-  color: black;
-}
-footer .footer a .follow {
-  margin: 0 5%;
-  color: white;
-  padding: 0;
-}
-@media (max-width: 800px) {
-  footer .footer a .follow {
-    margin: 0;
-    padding: 0;
-  }
-}
-@media (max-width: 500px) {
-  footer .footer a {
-    margin: 0;
-    padding: 0;
-  }
+  overflow: hidden;
+  position: absolute;
+  bottom: auto;
 }
 footer .follow {
   display: flex;
   flex-direction: column;
+  margin-right: 5%;
 }
 @media (max-width: 800px) {
   footer .follow {
-    margin-top: 5%;
+    margin-top: 1%;
   }
 }
 footer .follow #follow-us {
@@ -302,15 +277,21 @@ footer .follow a:hover {
 footer .copyright {
   color: black;
   font-size: 1rem;
+  margin: auto;
 }
-#home-footer {
+@media (max-width: 800px) {
+  footer .copyright {
+    margin: 1% auto;
+  }
+}
+@media (max-width: 500px) {
+  footer .copyright {
+    margin: auto;
+  }
+}
+#alt-footer {
   position: absolute;
   bottom: 0;
-}
-@media (max-height: 1250px) {
-  #home-footer {
-    bottom: auto;
-  }
 }
 .img-home {
   height: 400px;
@@ -424,6 +405,9 @@ footer .copyright {
 }
 h2 {
   margin: 2% 0;
+}
+#blog-container {
+  margin-top: 3%;
 }
 #blog,
 #help-tips {
@@ -540,20 +524,154 @@ h2 {
     flex-direction: column;
   }
 }
-.content {
-  position: fixed;
-  top: 60px;
+.img-fluid {
+  width: 200px;
+  border-radius: 10px;
+}
+.social-icons .a {
+  display: none;
+}
+.team {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  padding: 15% 0;
+}
+.team h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+.team h2 span {
+  color: #0097a7;
+}
+.team p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #7d7d7d;
+  margin: 20px 0 60px;
+  padding: 0;
+}
+.team .box {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease-in-out;
+  width: 200px;
+  height: 300px;
+  border-radius: 10px;
+  margin: 20px;
+}
+.team .box:hover {
+  transform: translateY(-15px);
+}
+.team .box:hover .social-icons {
+  margin-top: 0;
+  opacity: 1;
+}
+.team .box h3 {
+  margin: 0;
+  padding-left: 25px;
+  margin-top: 20px;
+  font-size: 17px;
+  font-weight: 600;
+}
+.team .box h4 {
+  margin: 0;
+  padding-left: 30px;
+  font-size: 13px;
+  color: #7d7d7d;
+  font-weight: 400;
+  margin-top: 5px;
+  padding-bottom: 25px;
+}
+.team .box .image {
+  position: relative;
   height: 100%;
+}
+.team .box .image .social-icons {
+  position: absolute;
+  top: 50%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  z-index: 20;
+  text-decoration: none;
+  opacity: 0;
+  margin-top: 100px;
+  padding: 8px 15px;
+  background: transparent;
+  background-image: url(images/GitHub-Mark-64px.png);
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+.team .box .image .social-icons i {
+  font-size: 18px;
+  padding: 0 7px;
+  color: #ff9100;
+}
+.team .container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: wrap;
+  width: 90%;
+  height: 100%;
+}
+.team .container1 .text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.team .container1 .first-4 {
+  display: inline-block;
+  flex-direction: column;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+.team .container1 .first-4 .member {
+  display: inline-block;
+  width: 200px;
+  height: 300px;
+  padding-left: 220px;
+  margin-bottom: 30px;
+}
+.team .container1 .second-4 .member {
+  display: inline-block;
+  width: 200px;
+  height: 300px;
+  padding-left: 220px;
+}
+.team .overplay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #ff9100 100%);
+  top: 0;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  z-index: 15;
+}
+.content {
+  margin-top: 3%;
+  height: auto;
   width: 100%;
   display: flex;
-  align-items: center;
   justify-content: center;
   overflow: auto;
   padding: 20px;
 }
+@media (max-width: 500px) {
+  .content {
+    margin-top: 0;
+  }
+}
 .content .contact {
   width: 80%;
-  max-width: 1080px;
   display: flex;
   box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.28);
   border-radius: 5px;
@@ -575,12 +693,9 @@ h2 {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: center;
 }
 @media (max-width: 800px) {
-  .content .contact .other {
-    justify-content: center;
-  }
 }
 @media (max-width: 500px) {
   .content .contact .other {
@@ -596,7 +711,6 @@ h2 {
   width: 100%;
 }
 .content .contact .other .info {
-  position: relative;
   padding: 20px;
 }
 @media (max-width: 800px) {
@@ -612,27 +726,12 @@ h2 {
 }
 .content .contact .other .info h2 {
   color: #0097a7;
-  font-size: 70px;
-  padding-left: 100px;
-  padding-bottom: 70px;
-  padding-top: 40px;
+  font-size: 3.6rem;
 }
 @media (max-width: 800px) {
   .content .contact .other .info h2 {
     padding: 0;
     font-size: 3rem;
-  }
-}
-.content .contact .other .info h3 {
-  color: #0097a7;
-  font-size: 50px;
-  padding-bottom: 60px;
-  padding-left: 220px;
-}
-@media (max-width: 800px) {
-  .content .contact .other .info h3 {
-    padding: 0;
-    font-size: 2.5rem;
   }
 }
 .content .contact .other .info .svg-wrap {
@@ -646,10 +745,9 @@ h2 {
 }
 .content .contact .other .info .svg-wrap a {
   border: 0;
-  padding-left: 100px;
   color: white;
   display: flex;
-  font-size: 36px;
+  font-size: 1.4rem;
   justify-content: center;
   align-items: center;
   font-style: bold;
@@ -658,6 +756,13 @@ h2 {
 .content .contact .other .info .svg-wrap a:hover {
   background-color: #078b75;
   color: black;
+}
+.content .contact .other .info .svg-wrap a svg {
+  width: 20px;
+  height: 20px;
+  fill: white;
+  transition: fill 0.2s ease-in-out;
+  margin-right: 13px;
 }
 @media (max-width: 800px) {
   .content .contact .other .info .svg-wrap a {
