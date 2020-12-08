@@ -25,8 +25,6 @@ Images:
 
 Web UI Developers
 
-- Alexander Harrison
-
 - Tatyana Dzhura
 
 - Adella Kennedy
